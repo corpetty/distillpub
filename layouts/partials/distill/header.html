@@ -38,7 +38,7 @@
     <a href="/" class="logo">{{ .Site.Title }}</a>
     <div class="nav">
       {{ range .Site.Menus.main }}
-        <a target="_blank" href="{{ .URL }}">{{ .Title }}</a> 
+        <a href="{{ .URL }}">{{ .Title }}</a> 
       {{ end }}
       <a target="_blank" href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}">RSS</a>
     </div>
